@@ -13,16 +13,16 @@
         "default_title": "summarise this video",
         "default_popup": "index.html",
         "default_icon": {
-            "16": "images/icon.png",
-            "32": "images/icon.png",
-            "48": "images/icon.png",
-            "128": "images/icon.png"
+            "16": "images/icon(1).png",
+            "32": "images/icon(1).png",
+            "48": "images/icon(1).png",
+            "128": "images/icon(1).png"
         }
     },
     "icons": {
-        "16": "images/icon.png",
-        "32": "images/icon.png",
-        "48": "images/icon.png",
-        "128": "images/icon.png"
+        "16": "images/icon(1).png",
+        "32": "images/icon(1).png",
+        "48": "images/icon(1).png",
+        "128": "images/icon(1).png"
     }
 }
