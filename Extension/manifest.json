@@ -1,6 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Youtube clip summarizer",
+    "author name":"Md Tauqueer manzar",
     "description": "An extension to summarize Youtube videos using the transcript",
     "version": "1.0",
     "permissions": [
