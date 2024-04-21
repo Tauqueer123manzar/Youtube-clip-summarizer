@@ -24,26 +24,6 @@ def get_summary(transcript):
         summary = summary + summary_text + ' '
     return summary 
 
-# # Specify the exact model and revision
-# model_name = "sshleifer/distilbart-cnn-12-6"
-# revision = "a4f8f3e"
-# summarizer = pipeline("summarization", model=model_name, revision=revision)
-
-# # Adjust the max_length parameter
-# max_length = 50  # You can adjust this value based on your requirements
-
-# # Assuming you have a function to fetch the URL content
-# def fetch_url_content(url):
-#     # Code to fetch URL content goes here
-#     pass
-
-# # Example usage
-# url = "https://www.youtube.com/watch?v=zkczDkbaE68"
-# content = fetch_url_content(url)
-# summary = summarizer(content, max_length=max_length)
-
-# print(summary)
-
 
 if __name__ == '__main__':
     app.run()

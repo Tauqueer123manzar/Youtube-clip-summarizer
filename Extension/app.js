@@ -17,4 +17,28 @@ document.addEventListener("DOMContentLoaded", function() {
             xhr.send();
         });
     });
+
+    // Function to copy text to clipboard
+    function copyToClipboard() {
+        var output = document.getElementById("output");
+        var range = document.createRange();
+        range.selectNode(output);
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+
+        try {
+            // Attempt to copy the selected text
+            var success = document.execCommand("copy");
+            var message = success ? "Copied to clipboard!" : "Failed to copy to clipboard.";
+            alert(message);
+        } catch (err) {
+            console.error("Error copying to clipboard:", err);
+            alert("Error copying to clipboard. Please try again.");
+        } finally {
+            window.getSelection().removeAllRanges();
+        }
+    }
+
+    // Add event listener to copy button
+    document.getElementById("copyBtn").addEventListener("click", copyToClipboard);
 });
